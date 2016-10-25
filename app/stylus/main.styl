@@ -1,0 +1,147 @@
+.wrap
+    float(100%)
+    
+
+    
+.home-abs
+    abs(block,100%,100%,0px,0px)
+    v = 100%
+    height "calc(%s + 70px)" % v
+    background: url(../img/home.jpg) no-repeat;
+    bgP(top,center,cover) 
+    
+    
+.inner 
+    abs(block,100%,auto,100%,0px)
+    min-height 500px;
+    
+    
+article,
+footer,
+header,
+section
+    float-w(100%)
+    
+    
+    
+h1
+    font-size 266px
+    color #fff
+    font-family fontB
+    text-align left
+    float-w(100%)  
+    
+h2
+    font-size 76px
+    color #fff
+    font-family fontBr
+    text-align left
+    float-w(100%)  
+
+    
+
+  
+.content
+    position relative
+    display block
+    margin 0 auto
+    width 1180px
+    
+    
+article
+    p
+        font-size fontSize
+        margin 20px 0
+        line-height 1.7
+    
+    
+// video
+
+video
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    
+    background-size: cover;
+    transition: 1s opacity;
+    z-index 98
+    
+    
+    
+.fade
+  background-image -moz-linear-gradient( -90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%)
+  background-image -webkit-linear-gradient( -90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%)
+  background-image -ms-linear-gradient( -90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%)
+  opacity-ie(0.8)
+  position: absolute
+  left 0px
+  top -42px
+  width 100%
+  height 20%
+  z-index 99
+  
+  
+  
+  
+  //button-block & button
+  
+.button-block
+    float-w(100%)
+    margin-top 40px
+    
+    .button
+        display inline-block
+        font-family fontB2
+        padding 18px 40px
+        background-image -moz-linear-gradient( 125deg, rgb(255,162,63) 1%, rgb(255,181,56) 51%, rgb(255,199,48) 100%)
+        background-image -webkit-linear-gradient( 125deg, rgb(255,162,63) 1%, rgb(255,181,56) 51%, rgb(255,199,48) 100%)
+        background-image -ms-linear-gradient( 125deg, rgb(255,162,63) 1%, rgb(255,181,56) 51%, rgb(255,199,48) 100%)
+        color #5d4811
+        text-transform uppercase
+        font-size 14px
+        border-radius 45px
+
+
+    
+    
+  
+// header  
+@import "section/header.styl" 
+// home-block
+@import "section/home-block.styl" 
+// about-block
+@import "section/about-block.styl" 
+                        
+        
+        
+        
+        
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+@media screen and (min-width:1200px) and (max-width:1400px) {}
+    

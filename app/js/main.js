@@ -4,7 +4,7 @@
      
 $('.multiple-items').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1
 });
      

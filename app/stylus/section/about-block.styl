@@ -31,7 +31,6 @@
         
         
         a
-            background-color #000
             display inline-block
             
     .slick-slider
@@ -43,12 +42,79 @@
         width 44px
         height 44px
         border-radius 50%
-        background #000
         top 50%
-        margin-bottom -22px
+        margin-top -22px
         left 50%
         margin-left -22px
-        opacity 0.6
+        overflow hidden
+        
+        .phbg
+            abs(block,100%,100%,0px,0px)
+            background #000
+            opacity .65
+            border-radius 50%
+            m-speed(0.3s)
+
+            
+        span 
+            position absolute
+            width 14px
+            height 2px
+            pov(45deg)
+            top 16px
+            left 16px
+            background #fff
+                
+        span::before 
+            content ''
+            position absolute
+            width 100%
+            height 100%
+            top 7px
+            left 7px
+            pov(-90deg)
+            background #fff
+            
+    .slick-next:hover
+        .phbg 
+            opacity 1
+            background #cd1041
+            
+    .button-block
+            margin-top: 22px;
+
+            
+.about-elips
+    .about-elips__floating
+        float-w(100%)
+        
+        .about-elips__floating_item
+            float-w(33.333333%)
+            height 315px;
+            display inline-table
+            
+        .about-elips__floating_el
+            size(80px,80px)
+            background colfirm
+            overflow hidden
+            border-radius 50%
+            float left
+            
+        .about-elips__floating_desc
+            margin-left 14px
+            float left
+            color #000
+            font-family fontM
+            font-size 18px
+            margin-top 10px;
+            display inline-block
+        
+            
+    
+
+            
+        
+        
             
         
             

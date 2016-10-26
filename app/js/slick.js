@@ -45,7 +45,7 @@
                 arrows: true,
                 asNavFor: null,
                 prevArrow: '',
-                nextArrow: '<a type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"></a>',
+                nextArrow: '<a type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><div class="phbg"></div><span></span></a>',
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,

@@ -6,7 +6,7 @@
 .home-abs
     abs(block,100%,100%,0px,0px)
     v = 100%
-    height "calc(%s + 70px)" % v
+    height "calc(%s + 70px)" % v !important
     background: url(../img/home.jpg) no-repeat;
     bgP(top,center,cover) 
     
@@ -34,14 +34,14 @@ h1
 h2
     font-size 76px
     color #fff
-    font-family fontB
+    font-family fontBr
     text-align left
     float-w(100%)  
 
 h3
     font-size 56px
     color #fff
-    font-family 'Conv_BerlingskeSerifSt-Lt'
+    font-family fontBr
     text-align left
     float-w(100%)  
 
@@ -135,6 +135,10 @@ video
 @import "section/tur-block.styl" 
 // app-block
 @import "section/app-block.styl" 
+// app-block
+@import "section/footer.styl" 
+// center-slide
+@import "section/center-slide.styl" 
                         
         
         

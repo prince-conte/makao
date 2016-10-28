@@ -61,7 +61,7 @@
 @font-face {
 	font-family: 'Conv_BerlingskeSerifSt-Regular';
 	src: url('../fonts/BerlingskeSerifSt-Regular.eot');
-	src: local('☺'), url('../fonts/BerlingskeSerifSt-Regular.woff') format('woff'), url('../fonts/BerlingskeSerifSt-Regular.ttf') format('truetype'), url('../fonts/BerlingskeSerifSt-Regular.svg') format('svg');
+	src: url('../fonts/BerlingskeSerifSt-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

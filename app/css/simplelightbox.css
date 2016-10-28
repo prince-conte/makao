@@ -63,7 +63,7 @@ body.hidden-scroll {
 /* line 47, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-navigation button {
   position: fixed;
-  top: 50%;
+  bottom: 5%;
   margin-top: -10px;
   height: 30px;
   width: 30px;
@@ -75,7 +75,7 @@ body.hidden-scroll {
 }
 /* line 58, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-navigation button.sl-next {
-  right: 40px;z-index: 999999999999;
+  right: 40px;z-index: 999999999999999999;
     background: #38c117;
     color: #fff;
     width: 40px;
@@ -84,7 +84,7 @@ body.hidden-scroll {
 }
 /* line 62, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-navigation button.sl-prev {
-  left: 40px;z-index: 999999999999;
+  left: 40px;z-index: 9999999999999999999;
     background: #38c117;
     color: #fff;
     width: 40px;

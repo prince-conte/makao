@@ -1,10 +1,56 @@
  $(document).ready(function() {
+
      
-  // var  oc_w = $(window).width();
-  // var  oc_c = $('.content').width();
-  // var  oc= oc_w - oc_c
+ var topHeight = $(window).height();
+     
+    if ( topHeight < 500 ) {
+        
+    $('.inner').css('top' , topHeight + 70);    
+        
+    }
+     
+ 
         
 
+ $("#mont1").click(function () { 
+     
+ $('#news1').fadeIn(1000);        
+ $('#news2').fadeOut(1000);        
+ $('#news3').fadeOut(1000);        
+ $('.news__button-block a').removeClass('active');
+ $('#mont1').addClass('active');
+ 
+       
+ });    
+  
+         
+
+ $("#mont2").click(function () { 
+     
+ $('#news2').fadeIn(1000);        
+ $('#news1').fadeOut(1000);        
+ $('#news3').fadeOut(1000);        
+ $('.news__button-block a').removeClass('active');
+ $('#mont2').addClass('active');
+ 
+       
+ });    
+  
+            
+
+ $("#mont3").click(function () { 
+     
+ $('#news3').fadeIn(1000);        
+ $('#news1').fadeOut(1000);        
+ $('#news2').fadeOut(1000);        
+ $('.news__button-block a').removeClass('active');
+ $('#mont3#').addClass('active');
+ 
+       
+ });    
+  
+     
+     
      
      
 $('.multiple-items').slick({
@@ -69,5 +115,27 @@ $('.center').slick({
 });    
      
      
+$("a.sc").click(function () {
+var elementClick = $(this).attr("href")
+var destination = $(elementClick).offset().top;
+jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+return false;
+});
+     
+     
+});
+
+
+$(window).resize(function() {
+     
+ var topHeight = $(window).height();
+     
+
+    if ( topHeight < 500 ) {
+        
+    $('.inner').css('top' , topHeight + 70);    
+        
+    }
+    
 });
  

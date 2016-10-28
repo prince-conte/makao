@@ -7,11 +7,15 @@
 ;( function( $, window, document, undefined )
 {
 	'use strict';
+    
+    
+
 
 $.fn.simpleLightbox = function( options )
 {
 
 	var options = $.extend({
+
 		overlay: true,
 		spinner: true,
 		nav: true,
@@ -462,11 +466,11 @@ $.fn.simpleLightbox = function( options )
 					$(document.body)[0].removeChild(scrollDiv);
 					$('body').data('padding',padding);
 					if(scrollbarWidth > 0){
-						$('body').addClass('hidden-scroll').css({'padding-right':padding+scrollbarWidth});
+			
 					}
 				}
 			} else {
-				$('body').removeClass('hidden-scroll').css({'padding-right':$('body').data('padding')});
+	
 			}
 		}
 

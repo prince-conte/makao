@@ -16,7 +16,7 @@ $('.multiple-items').slick({
      
 $('.center').slick({
   centerMode: true,
-  centerPadding: '740px',
+  centerPadding: '640px',
   slidesToShow: 1,
   responsive: [
       
@@ -45,11 +45,11 @@ $('.center').slick({
     },
             
     {
-      breakpoint: 768,
+      breakpoint: 1200,
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '150px',
         slidesToShow: 1
       }
     },
@@ -57,11 +57,11 @@ $('.center').slick({
       
       
     {
-      breakpoint: 480,
+      breakpoint: 1000,
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '0px',
         slidesToShow: 1
       }
     }

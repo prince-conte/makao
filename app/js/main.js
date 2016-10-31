@@ -2,15 +2,24 @@
 
      
  var topHeight = $(window).height();
+     clickInfo = 0;
      
     if ( topHeight < 500 ) {
         
     $('.inner').css('top' , topHeight + 70);    
         
     }
+   
      
- 
-        
+$('.autoplay').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: true,
+  autoplaySpeed: 6000,
+});
+     
+     
+     
 
  $("#mont1").click(function () { 
      
@@ -121,6 +130,128 @@ var destination = $(elementClick).offset().top;
 jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
 return false;
 });
+     
+
+   
+
+     
+     
+     
+     
+     
+    // prev-info 
+     
+    $("#center .slick-prev").click(function () {  
+    var destination = $('#info').offset().top;    
+    if ( clickInfo == 0 ) {
+    $('.info article').fadeOut(0);
+    $('#art5').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  4;   
+        
+   
+    } 
+        
+    else if ( clickInfo == 1 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art1').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  clickInfo - 1;
+         
+    }
+        
+    else if ( clickInfo == 2 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art2').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  clickInfo - 1;
+         
+    }
+        
+    else if ( clickInfo == 3 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art3').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  clickInfo - 1;
+         
+    }
+        
+    else if ( clickInfo == 4 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art4').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  clickInfo - 1;
+         
+    }
+
+
+     });       
+     
+     
+     
+    // next-info 
+     
+    $("#center .slick-next").click(function () {  
+    var destination = $('#info').offset().top;    
+    if ( clickInfo == 0 ) {
+    $('.info article').fadeOut(0);
+    $('#art2').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  clickInfo + 1;   
+        
+   
+    } 
+        
+    else if ( clickInfo == 1 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art3').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  clickInfo + 1;
+         
+    }
+        
+    else if ( clickInfo == 2 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art4').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  clickInfo + 1;
+         
+    }
+        
+    else if ( clickInfo == 3 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art5').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  clickInfo + 1;
+        
+         
+    }
+        
+    else if ( clickInfo == 4 ) {
+        
+    $('.info article').fadeOut(0);
+    $('#art1').fadeIn(0);
+    jQuery("html:not(:animated),body:not(:animated)").delay(500).animate({scrollTop: destination}, 500);    
+    clickInfo =  0;
+        
+         
+    }
+
+
+     });       
+     
+
+     
+     
+     
+     
      
      
 });

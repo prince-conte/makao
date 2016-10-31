@@ -490,10 +490,10 @@
             for (i = 0; i <= _.getDotCount(); i += 1) {
                 dot.append($('<li />').append(_.options.customPaging.call(this, _, i)));
             }
-
             _.$dots = dot.appendTo(_.options.appendDots);
-
             _.$dots.find('li').first().addClass('slick-active').attr('aria-hidden', 'false');
+            
+           
 
         }
 
@@ -677,7 +677,8 @@
 
     };
 
-    Slick.prototype.changeSlide = function(event, dontAnimate) {
+    Slick.prototype.changeSlide = function(event, dontAnimate) { 
+        
 
         var _ = this,
             $target = $(event.currentTarget),
@@ -723,6 +724,8 @@
             default:
                 return;
         }
+        
+        
 
     };
 

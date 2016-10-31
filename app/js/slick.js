@@ -44,8 +44,8 @@
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<a type="button" data-role="none" class="slick-prev" aria-label="Prev" tabindex="0" role="button"><div class="phbg"></div><span></span></a>',
-                nextArrow: '<a type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><div class="phbg"></div><span></span></a>',
+                prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>',
+                nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
@@ -490,10 +490,10 @@
             for (i = 0; i <= _.getDotCount(); i += 1) {
                 dot.append($('<li />').append(_.options.customPaging.call(this, _, i)));
             }
+
             _.$dots = dot.appendTo(_.options.appendDots);
+
             _.$dots.find('li').first().addClass('slick-active').attr('aria-hidden', 'false');
-            
-           
 
         }
 
@@ -677,8 +677,7 @@
 
     };
 
-    Slick.prototype.changeSlide = function(event, dontAnimate) { 
-        
+    Slick.prototype.changeSlide = function(event, dontAnimate) {
 
         var _ = this,
             $target = $(event.currentTarget),
@@ -724,8 +723,6 @@
             default:
                 return;
         }
-        
-        
 
     };
 

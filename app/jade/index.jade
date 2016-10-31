@@ -3,35 +3,65 @@ html(lang="ru")
     head
         include include/head.jade
     body
-        .fade
-        include include/home.jade
-        include include/header.jade
-        
-                                
-        .home-abs#home-abs
-            video(poster="img/homeg.jpg" id="bgvid" playsinline autoplay muted loop)
-                source(src="http://qwertydesign.ru/Macao.mp4" type="video/mp4")
-                source(src="http://qwertydesign.ru/Macao.webm" type="video/webm")
-            .fakebg
-        .inner#inner
-            .wrap
-                include include/about.jade
-                include include/window.jade
-                include include/tomakao.jade
-                include include/center-slide.jade
-                include include/info.jade
-                include include/news.jade
-                include include/window_2.jade
-                include include/tur.jade
-                include include/app.jade
-                include include/footer.jade
-            
+        header
+            .content
+                .logo-block
+                    .middle
+                        a.logo
+                .nav-block
+                    .middle
+                        nav
+                            a(href="#") Услуги
+                            a(href="#") Портфолио
+                            a(href="#") Истории наших влюбленных
+                            a(href="#") Статьи
+                            a(href="#") Новости
+                            a(href="#") Контакты
+                .phone-block
+                    .middle
+                        a.button 
+                            .phbg
+                            span Заказать звонок
+                        a.phone +7(495)7902981
+        section.home
+            .home-slider
+                .home-slider-slide-bg(style="background: url(img/slide-1);")
+                .content
+                    .home-slider__slider
+                        .home-slider__slider__item
+                            .title «Ради этих слов от любимой женщины ничего не жалко!!!!»
+                        
+            a.arrow.prev
+                .phbg
+                .ico
+                                       
+            a.arrow.next
+                .phbg
+                .ico
                 
-                        
-
-                        
-        
+            .arrow-dots
+                a.active
+                a
+                a
+                a
+                a
+                
+                                    
+            a.arrow-bot
+                .phbg
+                .ico
+                
+            .block-lenta
+                img(src="img/lenta.png")
+                
+        include include/index-about-block.jade 
+        include include/index-slider-video-block.jade 
+        include include/index-news-block.jade
+        include include/sayavka.jade
+        include include/footer.jade
             
+                            
+                            
                             
                             
                             
